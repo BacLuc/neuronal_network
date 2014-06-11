@@ -7,9 +7,9 @@ import java.util.Set;
 
 public class Network {
 
-	protected InputLayer inputLayer;
+	protected InputLayer inputLayer = new InputLayer();
 	protected LinkedHashSet<Layer<Neuron>> hiddenLayers = new LinkedHashSet<Layer<Neuron>>();
-	protected OutputLayer outputLayer;
+	protected OutputLayer outputLayer = new OutputLayer();
 
 	protected int mode = OPERATION_MODE_TESTING;
 	public static final int OPERATION_MODE_LEARNING = 0;
