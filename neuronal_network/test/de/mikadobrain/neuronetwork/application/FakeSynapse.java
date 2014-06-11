@@ -1,4 +1,7 @@
-package de.mikadobrain.neuronetwork;
+package de.mikadobrain.neuronetwork.application;
+
+import de.mikadobrain.neuronetwork.application.Neuron;
+import de.mikadobrain.neuronetwork.application.Synapse;
 
 public class FakeSynapse extends Synapse{
 

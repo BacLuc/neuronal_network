@@ -1,7 +1,9 @@
-package de.mikadobrain.neuronetwork;
+package de.mikadobrain.neuronetwork.application;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import de.mikadobrain.neuronetwork.application.Neuron;
 
 public class TestNeuron {
 

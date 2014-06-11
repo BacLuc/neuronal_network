@@ -1,4 +1,4 @@
-package de.mikadobrain.neuronetwork;
+package de.mikadobrain.neuronetwork.application;
 
 public class InputLayer extends AbstractInterfaceLayer<InputNeuron> {
 

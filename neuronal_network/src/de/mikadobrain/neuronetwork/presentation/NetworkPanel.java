@@ -5,12 +5,13 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Shape;
 import java.awt.geom.Ellipse2D;
+import java.awt.image.BufferedImage;
 
 import javax.swing.JPanel;
 
-import de.mikadobrain.neuronetwork.Layer;
-import de.mikadobrain.neuronetwork.Network;
-import de.mikadobrain.neuronetwork.Neuron;
+import de.mikadobrain.neuronetwork.application.Layer;
+import de.mikadobrain.neuronetwork.application.Network;
+import de.mikadobrain.neuronetwork.application.Neuron;
 
 public class NetworkPanel extends JPanel {
 	
@@ -21,6 +22,7 @@ public class NetworkPanel extends JPanel {
 	
 	public NetworkPanel(Network network) {
 		setNetwork(network);
+		setVisible(true);
 	}
 
 	public Network getNetwork() {
@@ -42,18 +44,13 @@ public class NetworkPanel extends JPanel {
 	
 	@Override
 	public void paintComponent( Graphics g ){
-		updateScreen();
+		super.paintComponent(g);
+		updateScreen(g);
 	}
 	
-	public void updateScreen() {
-		Graphics g = this.getGraphics();
-		g.drawImage(buffer, 0, 0, null);
-	}
-	
-	public void renderScreen() {
-		Graphics2D g = (Graphics2D) this.getGraphics();
+	public void updateScreen(Graphics g) {
 		for (Shape shape : visualizedNetwork.values()) {
-			g.draw(shape);
+			((Graphics2D) g).draw(shape);
 		}
 	}
 }

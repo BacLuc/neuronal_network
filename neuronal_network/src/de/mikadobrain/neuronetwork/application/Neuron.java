@@ -1,4 +1,4 @@
-package de.mikadobrain.neuronetwork;
+package de.mikadobrain.neuronetwork.application;
 
 import java.util.HashSet;
 import java.util.Random;

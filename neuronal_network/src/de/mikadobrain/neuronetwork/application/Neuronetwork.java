@@ -1,4 +1,6 @@
-package de.mikadobrain.neuronetwork;
+package de.mikadobrain.neuronetwork.application;
+
+import javax.swing.SwingUtilities;
 
 import de.mikadobrain.neuronetwork.presentation.NetworkFrame;
 
@@ -37,7 +39,9 @@ public class Neuronetwork {
 		network.addHiddenLayer(hiddenLayer);
 		network.setOutputLayer(outputLayer);
 
-		NetworkFrame frame = new NetworkFrame(network);
+		SwingUtilities.invokeLater(
+				()-> {new NetworkFrame(network);}
+				);
 		
 		NeuronalInterfaceData<InputNeuron> inputMap = new NeuronalInterfaceData<InputNeuron>(inputLayer);
 		inputMap.put(in_1, 0.4d);

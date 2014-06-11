@@ -4,7 +4,7 @@ import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
 
-import de.mikadobrain.neuronetwork.Network;
+import de.mikadobrain.neuronetwork.application.Network;
 
 public class NetworkFrame extends JFrame {
 
@@ -14,11 +14,9 @@ public class NetworkFrame extends JFrame {
 		setSize(1000, 1000);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new BorderLayout());
+		setVisible(true);
 		
 		NetworkPanel networkPanel = new NetworkPanel(network);
 		add(networkPanel);
-		setVisible(true);
-		networkPanel.renderScreen();
-		networkPanel.updateScreen();
 	}
 }

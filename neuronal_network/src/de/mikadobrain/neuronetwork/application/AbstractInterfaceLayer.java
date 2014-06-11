@@ -1,4 +1,4 @@
-package de.mikadobrain.neuronetwork;
+package de.mikadobrain.neuronetwork.application;
 
 public class AbstractInterfaceLayer<T extends Neuron> extends Layer<T> {
 

@@ -4,10 +4,10 @@ import java.awt.Shape;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 
-import de.mikadobrain.neuronetwork.Layer;
-import de.mikadobrain.neuronetwork.Network;
-import de.mikadobrain.neuronetwork.Neuron;
-import de.mikadobrain.neuronetwork.Synapse;
+import de.mikadobrain.neuronetwork.application.Layer;
+import de.mikadobrain.neuronetwork.application.Network;
+import de.mikadobrain.neuronetwork.application.Neuron;
+import de.mikadobrain.neuronetwork.application.Synapse;
 
 public class NetworkVisualizer {
 
